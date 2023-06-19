@@ -19,7 +19,7 @@ function onFormSubmit(evt) {
 };
 
 function onFormInput() {
-    dataForm = JSON.stringify({email: email.value, message: message.value});
+    let dataForm = JSON.stringify({email: email.value, message: message.value});
     localStorage.setItem(KEY_STORAGE, dataForm);
 };
 
