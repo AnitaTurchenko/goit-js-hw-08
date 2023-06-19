@@ -24,7 +24,7 @@ function onFormInput() {
 };
 
 function reloadPage() {
-    savedInfo = JSON.parse(localStorage.getItem(KEY_STORAGE));
+    let savedInfo = JSON.parse(localStorage.getItem(KEY_STORAGE));
     if(savedInfo) {
         email.value = savedInfo.email;
         message.value = savedInfo.message;
